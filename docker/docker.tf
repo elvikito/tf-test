@@ -16,10 +16,10 @@ resource "docker_image" "test" {
 
 resource "docker_container" "nginx" {
   image = docker_image.test.latest
-  name  = "test-1"
+  name  = "test-2"
   restart = "always"
   ports {
     internal = 80
-    external = 8000
+    external = 8090
   }
 }

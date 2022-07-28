@@ -30,5 +30,5 @@ variable "listexample" {
 }
 
 output "listout" {
-    value = "${var.listexample[0]}"
+    value = "${var.listexample[2]}"
 }
